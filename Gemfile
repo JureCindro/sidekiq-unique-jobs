@@ -6,8 +6,9 @@ gemspec
 gem 'appraisal', '>= 2.0.0'
 gem 'rspec-its',  require: false
 gem 'rspec-wait', require: false
+gem 'sidekiq', '~> 5.0'
 
-platforms :mri_25 do
+platforms :mri_25, :ruby do
   gem 'benchmark-ips',                         require: false
   gem 'codeclimate-test-reporter', '>= 1.0.8', require: false
   gem 'fasterer',                              require: false
